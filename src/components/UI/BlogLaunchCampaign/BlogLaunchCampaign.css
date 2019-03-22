@@ -1,0 +1,125 @@
+
+
+.BlogLaunchCampaign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    padding: 2rem;
+    margin: 4rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0.643px 0.766px 0px 0px rgba(12,34,66,0.09),10.285px 12.257px 38px 0px rgba(12,34,66,0.13);
+    position: relative;
+}
+.BlogLaunchCampaign::before {
+    content: '';
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    top: -5%;
+    left: 0px;
+    width: 100%;
+    height: 105%;
+    position:absolute;
+    z-index:-1;
+
+}
+
+.BlogLaunchCampaign:hover {
+    box-shadow: 0.643px 0.766px 0px 0px rgba(12,34,66,0.09),10.285px 12.257px 38px 7px rgba(12,34,66,0.13);
+}
+
+
+.BlogLaunchCampaign__text {
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.BlogLaunchCampaign__h5 {
+   color: black;
+   font-size: 1.3rem;
+   font-weight: 900;
+   margin: .2rem;
+}
+
+.BlogLaunchCampaign__h6{
+   color: black;
+   font-size: 1.2rem;
+   font-weight: 300;
+   margin: .2rem;
+}
+
+.BlogLaunchCampaign__button {
+     display: inline-block;
+     font-size: 1rem;
+    font-weight: 600;
+     background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    white-space: nowrap;  
+    margin-left: 1.5rem;
+}
+.BlogLaunchCampaign__button:hover {
+    background-image: linear-gradient(120deg, #c8d8fe 0%, #f8a0a3 100%);
+}
+
+
+
+.BlogLaunchCampaign__logo{
+    margin-right: 2rem;
+    color: #a6c0fe;
+    font-size: 2rem;
+ 
+
+}
+
+.BlogLaunchCampaign__cicle{
+
+}
+
+.BlogLaunchCampaign__icon {
+
+}
+
+
+@media only screen and (max-width: 600px){
+
+
+.BlogLaunchCampaign {
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem 0rem;
+
+}
+.BlogLaunchCampaign > *{
+    margin-bottom: 1rem;
+}
+.BlogLaunchCampaign__text {
+    margin: 0 auto 1.2rem auto;
+    align-items: center;
+}
+.BlogLaunchCampaign__button {
+    margin:  0 auto 1.2rem auto;
+}
+
+
+
+}
+
+@media only screen and (max-width: 800px){
+.BlogLaunchCampaign__h5 {
+   font-size: 1rem;
+}
+
+.BlogLaunchCampaign__h6{
+   font-size: 1rem;
+}
+
+.BlogLaunchCampaign__button {
+     font-size: .8rem;
+}
+}

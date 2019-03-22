@@ -1,0 +1,28 @@
+
+
+
+.StepTwo {
+    width: 75rem;
+}
+
+.StepTwo__title {
+    padding: 2rem;
+    color: #777;
+}
+
+.StepTwo__forms > * {
+    margin-bottom: 1rem;
+}
+
+
+.StepTwo__age {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.StepTwo__sex {
+     display: flex;
+      flex-direction: column;
+    margin-right: auto;
+}

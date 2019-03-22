@@ -1,0 +1,55 @@
+.CollapsePrice {
+    max-width: 60rem;
+    margin: 5rem auto;
+    padding: 1rem;
+    
+}
+
+.CollapsePrice__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.CollapsePrice__list {
+    font-size: 1.6rem;
+}
+
+.CollapsePrice__box {
+    padding: 1rem 0;
+    border-bottom: solid 1px rgb(218, 214, 214);
+    
+}
+
+.CollapsePrice__text {
+    font-size: 1.4rem;
+}
+.CollapsePrice__question{
+    line-height: 2rem;
+}
+
+@media only screen and (max-width: 1000px){
+    .CollapsePrice__list {
+   width: 95%;
+}
+
+
+}
+
+@media only screen and (max-width: 600px){
+ .CollapsePrice__title {
+    font-size: 1.7rem;
+
+}
+.CollapsePrice__list {
+   /* width: 60rem;
+    margin: 0 auto; */
+    font-size: 1.4rem;
+}
+.CollapsePrice__text {
+    font-size: 1.2rem;
+}
+
+
+}

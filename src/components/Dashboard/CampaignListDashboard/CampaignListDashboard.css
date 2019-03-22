@@ -1,0 +1,19 @@
+.CampaignListDashboard__first {
+    margin-top: 8rem;
+    text-align: center;
+    color: var(--color-grey-dark-1);
+    font-size: 1.4rem;
+    /* line-height: 5px; */
+}
+
+.CampaignListDashboard__first p {
+    line-height: 5px;
+}
+
+.CampaignListDashboard__first-button {
+    color: #55E6C1;
+    transition: all .2s;
+}
+.CampaignListDashboard__first-button:hover {
+    color: rgb(68, 187, 157);
+}

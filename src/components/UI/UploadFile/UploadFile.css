@@ -1,0 +1,23 @@
+.UploadFile {
+    margin: 1rem 0;
+}
+
+.UploadFile__img {
+    margin: 0 auto;
+    width: 99%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.UploadFile__button {
+    padding: 1rem 8rem;
+    background-color: #eee;
+    font-size: 3rem;
+    color: #55E6C1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    border-radius: 10px;
+}

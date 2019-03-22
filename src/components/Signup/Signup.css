@@ -1,0 +1,121 @@
+
+.Signup{
+  margin: 2.5rem auto;
+  width: 40rem;
+}
+
+.Signup__header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.Signup__header h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.Signup__logo {
+    width: 2rem;
+}
+
+.Signup__box {
+   margin: 0 auto;
+    width: 100%;
+    padding: 2rem;
+    border: solid 1px #bdc3c7;
+    border-radius: 5px;
+}
+.Signup__box > * {
+    margin-bottom: 2rem;
+}
+
+.Signup__inputs {
+      display: flex;  
+      justify-content: space-between;
+}
+
+.Signup__label {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    text-transform: uppercase;
+     color: var(--color-grey-dark-3);
+}
+
+
+
+.Signup__close {
+    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.Signup__header  {
+   /* border-bottom: solid 3px #55E6C1; */
+   padding-bottom: .5rem;
+}
+.Signup__title {
+  font-size: 1.8rem;
+  line-height: 0px;
+  font-weight: 900;
+  color: rgb(156, 155, 155);
+  text-transform: uppercase;
+}
+
+.Signup__LoginSentence {
+font-size: 1.2rem
+}
+.Signup__logIn {
+    color: #55E6C1;
+    transition: all .2s;
+}
+.Signup__logIn:hover {
+    color: rgb(55, 218, 177);
+}
+.Signup__inputBox {
+    display: flex;
+    flex-direction: column;
+    margin: .6rem 0;
+}
+.Signup__checkboxBox {
+    display: flex;
+    margin-bottom: 5px;
+}
+.Signup__inputs {
+      display: flex;  
+      justify-content: space-between;
+}
+.Signup__inputs .Signup__inputBox {
+     width: 49%;
+   
+}
+
+
+
+.Signup__button {
+    margin: 1rem 0;
+  font-size: 1.2rem;
+    background-color: #55E6C1;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: all .2s;
+    align-self: flex-start;
+}
+
+
+.Signup__button:hover {
+    background-color: rgb(131, 233, 207);
+    box-shadow: 0.643px 0.766px 0px 0px rgba(12,34,66,0.09),10.285px 12.257px 38px 0px rgba(12,34,66,0.13);
+
+}
+
+
+.Signup__error {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+
+  

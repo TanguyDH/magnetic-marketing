@@ -1,0 +1,16 @@
+
+
+
+.StepOne {
+    width: 75rem;
+   
+}
+
+.StepOne__title {
+    padding: 2rem;
+    color: #777;
+}
+
+.StepOne__forms > * {
+    margin-bottom: 1rem;
+}

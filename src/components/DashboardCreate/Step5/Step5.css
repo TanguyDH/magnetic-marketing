@@ -1,0 +1,19 @@
+
+
+.react-date-picker__wrapper {
+    border: none !important;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.7px 0px 0px rgba(12,34,66,0.09), 5px 6px 20px 0px rgba(12,34,66,0.13);
+}
+
+
+.react-calendar{
+    border: none !important;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.7px 0px 0px rgba(12,34,66,0.09), 5px 6px 2px 0px rgba(12,34,66,0.13) !important;
+}
+
+.react-date-picker__inputGroup {
+    font-size: 1.2rem;
+}

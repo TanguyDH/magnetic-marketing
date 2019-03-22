@@ -1,0 +1,76 @@
+
+.footer {
+    padding: 2em;
+    /* background-color: var(--color-primary); */
+    /* background: #f68084; */
+     /* background:  rgb(212, 212, 212) ; */
+     /* background: #bdc3c7; */
+      border-top: solid 2px var(--color-grey-light-3); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.footer__box-icon {
+   
+}
+
+.footer__icon  {
+    
+    color: var(--color-grey-dark-3);
+    padding: 0rem 3rem;
+    cursor: pointer;
+}
+.footer__cgu:link {
+  display: none;
+    font-size: 1.2rem;
+}
+.Footer__link {
+    font-size: 1.2rem;
+    color: var(--color-grey-dark-3) ;
+     font-weight: 900;
+     position: relative;
+     
+}
+.Footer__link:hover {
+   color: var(--color-grey-dark-3);
+} 
+
+.footer__cgu{
+    color: var(--color-grey-dark-3);
+    font-weight: 600;
+}
+.footer__cgu:hover{
+    color: var(--color-grey-dark-3);
+}
+
+@media only screen and (max-width: 500px){
+    .footer__icon {
+    font-size: 1rem;
+    padding: 0;
+ 
+}
+
+}
+
+
+
+  /* <a href="https://www.facebook.com/Magnetic-288398428546133/" target="_blank" rel="noopener noreferrer">
+            <Icon className="footer__icon" name="facebook" size="big" />
+          </a>
+          <a href="https://www.instagram.com/heymagnetic/" target="_blank" rel="noopener noreferrer">
+            <Icon className="footer__icon" name="instagram" size="big" />
+          </a>
+          <a href="https://twitter.com/search?q=heyMagnetic" target="_blank" rel="noopener noreferrer">
+            <Icon className="footer__icon" name="twitter" size="big" />
+          </a>
+        <a href="https://medium.com/@mdhk" target="_blank" rel="noopener noreferrer">
+            <Icon className="footer__icon" name="medium" size="big" />
+          </a>
+        <a href="https://www.youtube.com/channel/UCs3dGqFpW3e3oruBLo3dscg?view_as=subscriber" target="_blank" rel="noopener noreferrer">
+            <Icon className="footer__icon" name="youtube" size="big" />
+          </a> */

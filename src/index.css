@@ -1,0 +1,93 @@
+/* @import "~slick-carousel/slick/slick.css"; */
+/* @import "~slick-carousel/slick/slick-theme.css";  */
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+
+@media only screen and (max-width: 900px){ 
+      html {
+        font-size: 50.75%;
+      }      
+  }
+@media only screen and (max-width: 600px){ 
+      html {
+        font-size: 40%;
+      }      
+  }
+@media only screen and (max-width: 1800px){ 
+      html {
+        font-size: 80%;
+      }      
+}
+
+
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; 
+  line-height: 1.7;
+  color: black;
+}
+
+:root{
+    /* --color-primary: #eb2f64;
+    --color-primary-light: #FF3366;
+    --color-primary-dark: #BA265D; */
+/* 
+    --color-primary: #55E6C1;
+    --color-primary--light: #81edd1;
+    --color-primary--dark: #29dfb1; */
+
+    --color-primary: #24ece4;
+    --color-primary--dark: #12cbc4;
+    --color-primary--light: #53f0ea;
+
+
+     --color-secondary: #55E6C1;
+  
+
+   
+
+
+     --color-grey-dark-3: #333;
+     --color-grey-dark-2: #777;
+     --color-grey-dark-1: #999;
+
+     --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+
+     --shadow-light-1: 0rem 2rem 5rem rgba(0,0,0,.06);
+     --shadow-light-2: 0 2rem 3rem rgba(0,0,0,.06);
+}
+
+
+
+
+::selection{
+    background-color: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {  };
+
+@media only screen and (max-width: 900px) {  };
+
+@media only screen and (max-width: 1200px) {  };
+
+@media only screen and (max-width: 1800px) {  };
+
+

@@ -1,0 +1,15 @@
+
+.SignupPage {
+    /* min-height: 100vh; */
+    width: 100rem;
+    margin: 0rem auto;
+}
+
+
+
+ @media only screen and (max-width:1400px){
+.SignupPage {
+    width: 100%;
+    margin: 0rem auto;
+} 
+ }

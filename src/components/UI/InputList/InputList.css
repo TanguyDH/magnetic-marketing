@@ -1,0 +1,18 @@
+
+
+.InputList__inputBox {
+    display: flex;
+    align-items: center;
+}
+
+.InputList__input {
+    width: 100%;
+    align-self: stretch;
+    margin: 3px 0;
+}
+
+
+.InputList__icon {
+    font-size: 1.2rem;
+    padding: 5px;
+}

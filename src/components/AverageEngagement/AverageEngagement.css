@@ -1,0 +1,99 @@
+
+
+.AverageEngagement {
+    padding: 6rem 2rem;
+    width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.AverageEngagement__title {
+   font-size: 2.5rem;
+   font-weight: 500;
+   margin-bottom: 4rem;
+    color: #1e2935;
+}
+
+.AverageEngagement__listBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AverageEngagement__box{
+    padding: 0rem 8rem ;
+}
+.AverageEngagement__facebook {
+    border-left: 1px solid rgb(209, 209, 209);
+    border-right: 1px solid rgb(209, 209, 209);
+}
+
+.AverageEngagement__point {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 5px;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.AverageEngagement__pourcent {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 8rem;
+    color: #1e2935;
+}
+
+.AverageEngagement__name {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.AverageEngagement__tooltip {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 0px;
+}
+
+.AverageEngagement__tooltip span {
+   display: block;
+   line-height: 25px;
+}
+
+
+@media only screen and (max-width: 1300px){
+.AverageEngagement {
+   width: 100%;
+}
+
+
+}
+
+@media only screen and (max-width: 1100px){
+.AverageEngagement__title {
+   font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+    
+.AverageEngagement {
+    padding: 1rem 1rem 3rem 1rem;
+}
+.AverageEngagement__listBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.AverageEngagement__facebook {
+    border-top: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid rgb(209, 209, 209);
+    border-left: none;
+    border-right: none;
+}
+
+.AverageEngagement__box{
+    padding: 2rem 0rem ;
+    width: 82%;
+}
+.AverageEngagement__pourcent {
+    font-size: 4rem;
+}
+
+}

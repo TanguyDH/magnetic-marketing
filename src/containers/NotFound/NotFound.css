@@ -1,0 +1,29 @@
+
+
+
+.notFound {
+    height: 100vh;
+    width: 100vw;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #999;
+    text-align: center;
+    line-height: 5rem;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+
+
+@media only screen and (max-width: 500px){
+    .notFound {
+        font-size: 1.5rem;
+    line-height: 3rem;
+   
+}
+
+}

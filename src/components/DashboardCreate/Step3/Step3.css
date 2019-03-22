@@ -1,0 +1,31 @@
+
+
+
+.Step3__age {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.Step__genderBox {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.Step3__gender {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    border: solid 1px #55E6C1;
+    color: #55E6C1;
+    padding: 1rem 6rem;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+.react-select__control:focus{
+  background-color: red;
+}

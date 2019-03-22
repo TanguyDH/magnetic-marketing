@@ -1,0 +1,80 @@
+
+
+.HeaderPricing {
+    text-align: center;
+    padding: 2rem;
+}
+
+.HeaderPricing__pricing {
+   font-size: 1.4rem;
+   text-transform: uppercase;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.HeaderPricing__title1 {
+   font-size: 2.9rem;
+   color: var(--color-grey-dark-2);
+   font-weight: 500;
+}
+
+.HeaderPricing__title2 {
+   font-size: 2rem;
+   color: var(--color-primary);
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 1000px){
+
+
+.HeaderPricing__pricing {
+   font-size: 1.3rem;
+   text-transform: uppercase;
+    color: #1abc9c;
+    font-weight: 500;
+}
+
+.HeaderPricing__title1 {
+   font-size: 1.9rem;
+   color: #3d3d3d;
+   font-weight: 500;
+}
+
+.HeaderPricing__title2 {
+   font-size: 1.3rem;
+   color: #1abc9c;
+    font-weight: 500;
+}
+
+
+
+
+}
+
+
+@media only screen and (max-width: 600px){
+
+.HeaderPricing__pricing {
+   font-size: 1.1rem;
+   text-transform: uppercase;
+    color: #1abc9c;
+    font-weight: 500;
+}
+
+.HeaderPricing__title1 {
+   font-size: 1.5rem;
+   color: #3d3d3d;
+   font-weight: 500;
+}
+
+.HeaderPricing__title2 {
+   font-size: 1.2rem;
+   color: #1abc9c;
+    font-weight: 500;
+}
+
+
+
+
+}

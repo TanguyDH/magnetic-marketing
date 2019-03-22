@@ -1,0 +1,70 @@
+
+.PicingPage {
+    min-height: 100vh;
+    width: 100rem;
+    margin: 0 auto; 
+    position: relative;
+    
+}
+
+@media only screen and (max-width: 1400px){
+    .PicingPage {
+    width: 95vw;
+}
+
+}
+.PicingPage__polygon1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.PicingPage__polygon2 {
+    position: absolute;
+    top: -20rem;
+    left: 70%;
+}
+
+/* 
+ .PicingPage__polygon1 {
+    position: absolute;
+    top: 1%;
+    left: 0%;
+     background-color: #749cfd; 
+    background-image: linear-gradient(#749cfd 0%, #d8e4fe 100%);
+    opacity: .1;
+    width: 35rem;
+    height: 35rem;
+   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+z-index: -100000000;
+}   
+
+  .PicingPage__polygon2 {
+    position: absolute;
+    top: -20rem;
+    left: 70%;
+    background-color: #749cfd;
+    opacity: .1;
+   width: 35rem;
+    height: 35rem;
+   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+z-index: -10000000000000000000;
+
+}  
+
+ @media only screen and (max-width:900px){
+ .PicingPage__polygon2 {
+     position: absolute;
+    top: -20rem;
+    left: 70%;
+} 
+
+ .PicingPage__polygon1 {
+    position: absolute;
+    top: 5%;
+    left: -20rem;
+ }
+
+}    */

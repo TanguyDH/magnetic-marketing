@@ -1,0 +1,16 @@
+.statisticalModal__button {
+        color: var(--color-grey-dark-1);
+        font-weight: 900;
+        border: none;
+        cursor: pointer;
+        border-bottom: 1px solid var(--color-grey-dark-1);
+        padding: 3px;
+        font-size: 1.2rem;
+        transition: all .2s;
+        background-color: none;
+}
+
+.statisticalModal__button:hover {
+    color: var(--color-grey-dark-2);
+        border-bottom: 1px solid var(--color-grey-dark-2);
+}

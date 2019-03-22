@@ -1,0 +1,31 @@
+ .Collapse__list {
+    font-size: 1.4rem;
+}
+
+.Collapse__box {
+    padding: .5rem 0;
+  
+    
+}
+
+.Collapse__text {
+    font-size: 1.3rem;
+}
+.Collapse__question{
+    line-height: 2rem;
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+.Collapse__list {
+
+    font-size: 1.2rem;
+}
+.Collapse__text {
+    font-size: 1rem;
+}
+
+
+} 

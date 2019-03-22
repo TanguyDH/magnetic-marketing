@@ -1,0 +1,146 @@
+
+
+.navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+
+    height: 5.5rem;
+    padding: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    z-index: 100;
+
+
+    
+    /* background-color: white; */
+    /* box-shadow: 0.3px 0.3px 0px 0px rgba(12,34,66,0.09),5px 3px 30px 0px rgba(12,34,66,0.13); */
+
+
+}
+
+.navigation div{
+    /* display: flex; */
+ 
+}
+
+
+
+.navigation__logo{
+    padding: 2rem;
+    text-align: center;
+     font-size: 1.5rem;
+    /* font-family: 'Monoton', cursive; */
+    cursor: pointer;
+      cursor: pointer;  
+   
+     
+}
+
+.navigation__logo-link {
+      font-size: 1.6rem;
+      color: black;
+      letter-spacing: 3px;
+    font-family: 'Allerta Stencil', sans-serif;     
+} 
+.navigation__logo-link:hover {
+      color: black;   
+} 
+
+
+.navigation__logoSidebar-link {
+    color: white;
+}
+.navigation__logoSidebar-link:hover {
+    color: white;
+}
+.navigation__logo-modal{
+     border-bottom: 2px solid white;
+}
+
+.navigation nav {
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navigation nav div > *:not(:last-child) {
+      margin-right: 1.2rem;
+}
+
+.navigation__link {
+    font-size: 1.2rem;
+    color: black ;
+     font-weight: 300;
+     position: relative;
+
+     
+}
+
+
+.navigation__link:hover {
+   color: rgb(87, 86, 86);
+} 
+
+
+.navigation__link-account {
+    font-size: 1.2rem;
+    color: white;
+    background: var(--color-primary);
+    border-radius: 20px;
+    padding: .7rem 3rem;
+     font-weight: 900;
+     box-shadow: 0.3px 0.3px 0px 0px rgba(12,34,66,0.09),5px 3px 24px 0px rgba(12,34,66,0.13);
+     transition: all .2s;
+}
+.navigation__link-account:hover {
+    color: white;
+    background: var(--color-primary--light);
+    /* box-shadow: 0.1px 0.1px 0px 0px rgba(12,34,66,0.09),2px 1px 12px 0px rgba(12,34,66,0.13); */
+}
+
+.navigation__link-account:active {
+    box-shadow: 0.1px 0.1px 0px 0px rgba(12,34,66,0.09),2px 1px 12px 0px rgba(12,34,66,0.13);
+}
+
+
+
+.navigation__icon {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1800px){ 
+     .navigation__logo{
+     font-size: 1.7rem;
+    }
+    .navigation nav {
+    font-size: 2rem; 
+    } 
+}
+
+
+
+@media only screen and (max-width: 800px){
+
+
+ .navigation nav {
+   display: none;
+}
+
+.navigation__logo-link {
+      font-size: 1.4rem;   
+} 
+}
+
+
+
+
+
+

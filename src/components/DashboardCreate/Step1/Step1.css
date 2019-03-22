@@ -1,0 +1,98 @@
+
+
+.Step {
+    margin-top: 3rem;
+    padding: 2rem;
+    border: solid 1px #bdc3c7;
+    border-radius: 10px;
+}
+
+.Step__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Step__title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+     padding-bottom: 10px;
+    color: var(--color-grey-dark-2);
+      border-bottom: solid 1.5px #55E6C1;
+      margin: 2rem 0;
+}
+
+.Step__part1 {
+    width: 49%;
+}
+.Step__part2 {
+    width: 49%;
+}
+.Step__part1 > * {
+   margin-bottom: 1rem;
+}
+.Step__part2 > * {
+    margin-bottom: 1rem;
+}
+
+.Step__line{
+    opacity: .7;
+      border-top: solid .7px var(--color-grey-dark-1);
+      margin: 2rem 0;
+}
+
+.Step__label {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: var(--color-grey-dark-3);
+}
+
+.Step__button {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.Step__inputsBox {
+    display: flex;
+    justify-content: space-between; 
+}
+.Step__inputBox {
+    flex: 0 0 49%;
+   /* width: 49%; */
+} 
+
+.Step__button button{
+ align-self: center;
+    font-size: 1.3rem;
+    background-color: #55E6C1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: .8rem 1.6rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+
+.Step__button button:hover {
+     color: white;
+    background-color: rgb(135, 226, 203);
+    box-shadow: 0.643px 0.766px 0px 0px rgba(12,34,66,0.09),10.285px 12.257px 38px 0px rgba(12,34,66,0.13);
+}
+
+.Step__link {
+    text-transform: lowercase;
+    color: #55E6C1;
+    border-bottom: solid 1px #55E6C1;
+    transition: all .2s;
+     margin: 0 10px;
+}
+
+.Step__link:hover {
+    color: rgb(65, 199, 165);
+    border-bottom: solid 1px rgb(65, 199, 165);
+   
+}

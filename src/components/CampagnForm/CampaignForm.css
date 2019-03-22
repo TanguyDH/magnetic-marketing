@@ -1,0 +1,38 @@
+
+
+
+.CampaignForm {
+    padding: 6rem 0;
+     background-color: var(--color-grey-light-2);
+    
+}
+
+.CampaignForm__header{
+    text-align: center;
+}
+
+.CampaignForm__header h3{
+     font-size: 2rem;
+     color: var(--color-grey-dark-2);
+     font-weight: 900;
+    
+}
+
+.CampaignForm__header p{
+  color: var(--color-grey-dark-1);
+    font-size: 1.5rem;
+}
+
+.CampaignForm__form{
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--color-grey-light-3);
+    margin-top: 2rem;
+
+}
+
+.CampaignForm__form div > *:not(:last-child){
+    margin-bottom: 1rem;
+}
+

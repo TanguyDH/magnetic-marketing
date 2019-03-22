@@ -1,0 +1,89 @@
+
+
+.HeaderDashboard > * {
+    margin-bottom: 3rem;
+}
+
+ .HeaderDashboard__Magnetic {
+    display: flex;
+    justify-content: start;
+    font-size: 1.5rem;
+    color:  var(--color-grey-dark-2);
+}
+
+.HeaderDashboard__search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    color:  var(--color-grey-dark-2);
+      opacity: .3;
+      padding: 1rem 0;
+         border-bottom: solid .5px #55E6C1;
+}
+.HeaderDashboard__input{
+        border: none;  
+    } 
+
+
+
+.HeaderDashboard__who {
+    display: flex;
+    font-size: 1rem;
+}
+
+.HeaderDashboard__letter {
+    background-color: var(--color-grey-light-3);
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-grey-dark-3);
+    margin-right: 1.2rem;
+}
+
+.HeaderDashboard__nameBox {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.HeaderDashboard__brand{
+    color: #55E6C1;
+}
+
+.HeaderDashboard__add {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+     color: var(--color-grey-dark-2);
+     padding-bottom: 2rem;
+      border-bottom: solid .5px #55E6C1;
+}
+
+
+.HeaderDashboard__button {
+    align-self: center;
+    font-size: 1.5rem;
+    background-color: #55E6C1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: .8rem 1.6rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.HeaderDashboard__button:hover {
+     color: white;
+    background-color: rgb(135, 226, 203);
+    box-shadow: 0.643px 0.766px 0px 0px rgba(12,34,66,0.09),10.285px 12.257px 38px 0px rgba(12,34,66,0.13);
+
+}.HeaderDashboard__button:active {
+    background-color: #87e2cb;
+    box-shadow: 0.643px 0.766px 0px 0px rgba(12,34,66,0.09),5px 6px 20px 0px rgba(12,34,66,0.13);
+
+}

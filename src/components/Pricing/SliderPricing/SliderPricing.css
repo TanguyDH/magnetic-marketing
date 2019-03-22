@@ -1,0 +1,53 @@
+
+
+.SliderPricing  {
+  margin: 3rem auto;
+}
+
+.SliderPricing__box {
+    width: 50rem;
+    margin: 2rem auto 3rem auto;
+}
+
+.SliderPricing__peopleReached {
+    text-align: center;
+}
+
+.SliderPricing__tooltip {
+
+}
+.SliderPricing__p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(88, 87, 87);
+    text-align: center; 
+}
+.SliderPricing__number {
+    margin: 0 9px;
+    border-bottom: solid 3px var(--color-primary);
+    white-space: nowrap;
+    color: var(--color-primary);
+}
+.SliderPricing__p span {
+   font-weight: 900;
+}
+
+
+.rc-slider-tooltip {
+  text-align: center;
+}
+.rc-slider-hanle{}
+
+
+@media only screen and (max-width:800px){
+
+.SliderPricing__box {
+    width: 90%;
+}
+
+.SliderPricing__p {
+    font-size: 1.2rem;
+}
+
+
+}
