@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import Modal from "react-modal";
 import { NavLink } from "react-router-dom";
 import './SideBar.css';
+import {connect} from 'react-redux';
 import { Icon } from "semantic-ui-react";
 
-export default class SideBar extends Component {
+class SideBar extends Component {
       state= {
         modal: false
     }
@@ -60,16 +61,24 @@ export default class SideBar extends Component {
               Blog
             </a>
 
-            <NavLink className="SideBar__link" to="/">
-              My Account
+            <NavLink
+               className="SideBar__link"
+                to={this.props.currentUser.currentUser ?'/dashboard' : '/login'}
+              >
+                { this.props.currentUser.currentUser ?' MY ACCOUNT' : ' LOG IN'}
+              </NavLink>
+
+            <NavLink
+             className="SideBar__link-getStarted"
+              to='/signup'
+            >
+             GET STARTED
             </NavLink>
 
-            {/* <NavLink exact className="SideBar__joinMagnet" to="/magnet">
-              Join Magnets
-            </NavLink> */}
-            <a href="mailto:team@heymagnetic.com" className="SideBar__link">
+           
+            {/* <a href="mailto:team@heymagnetic.com" className="SideBar__link">
               team@heymagnetic.com
-            </a>
+            </a> */}
           </div>
         </Modal>
       </React.Fragment>
@@ -77,7 +86,14 @@ export default class SideBar extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    currentUser: state.currentUser
+  };
+}
 
+
+export default connect(mapStateToProps)(SideBar)
 
 // <div className="SideBar__logoBox">
 //     <NavLink className="SideBar__logo" to="/">

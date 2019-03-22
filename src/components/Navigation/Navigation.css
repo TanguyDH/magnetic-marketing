@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
     height: 5.5rem;
@@ -128,6 +129,10 @@
 
 
 @media only screen and (max-width: 800px){
+
+    .navigation {
+        height: 0rem;
+    }
 
 
  .navigation nav {
