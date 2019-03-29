@@ -1,0 +1,56 @@
+
+.Step4__box {
+    border-bottom: solid 1px var(--color-grey-dark-1);
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.Step4__title {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: var(--color-grey-dark-3);
+}
+.Step4__NanoInfluencersInfo--1  {
+   
+    display: flex;
+    align-content: center;
+  
+ 
+}
+.Step4__brandName {
+    font-weight: bold;
+    margin: 0;  
+}
+.Step4__logoImg {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100px;
+    margin-right: 2rem;
+}
+
+.Step4__boardImg {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 0 7px 7px 0;
+
+}
+
+
+.Step4__NanoInfluencersInfo--3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Step4__textListInput{
+    margin: 0;
+}
+
+.Step4__bigImage {
+    width: 99%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}

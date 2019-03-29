@@ -9,7 +9,7 @@ class UploadFile extends Component {
     avatar: "",
     isUploading: false,
     progress: 0,
-    avatarURL: ""
+    avatarURL: this.props.value ? this.props.value : ""
   };
  
   handleChangeUsername = event =>

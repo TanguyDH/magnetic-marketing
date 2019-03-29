@@ -172,7 +172,7 @@ class Signup extends Component {
       { key: "4", value: "201 - 1000", text: "201 - 1000" },
       { key: "5", value: "1000+", text: "1000+" }
     ];
-    return (
+    return this.state.loading ? <Spinner />: (
       <div className="Signup">
         <div className="Signup__header">
           <img src={logo} className="Signup__logo" alt='logo' />
@@ -285,7 +285,7 @@ class Signup extends Component {
             )}
           </div>
           <button onClick={this.handleSubmit} className="Signup__button">
-            {loading ? <Spinner /> : null}
+          
             Let's do this
           </button>
 

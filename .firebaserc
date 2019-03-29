@@ -1,6 +1,7 @@
 {
   "projects": {
     "magnetic": "heymagnetic",
-    "default": "heymagnetic"
+    "default": "heymagnetic",
+    "heymagnetic": "heymagnetic"
   }
 }

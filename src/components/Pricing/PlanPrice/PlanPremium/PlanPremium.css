@@ -55,6 +55,7 @@
 .PlanPremium__list {
     text-align: center;
     display: block;
+    padding: 0;
 }
 
 .PlanPremium__list div {

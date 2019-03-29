@@ -3,20 +3,26 @@ import {Input, Select} from 'semantic-ui-react';
 import NumberFormat from "react-number-format";
 import DatePicker from 'react-date-picker';
 import './Step5.css';
+import firebase from '../../../firebase';
+import Spinner from '../../UI/Spinner/Spinner';
+import {connect} from 'react-redux';
+import {withRouter} from 'react-router-dom'
 
-export default class Step3 extends Component {
+class Step5 extends Component {
   state = {
-    date: new Date(),
-    firstName: '',
-   lastName: '',
-    phoneNumber: '',
-    companyName: '',
-    city: '',
-    postCode: '',
-     StreetAdress: '',
-    state: '',
-    country: '',
-    budget: ''
+    date: this.props.campaign ? this.props.campaign.date : new Date(),
+    firstName: this.props.campaign ? this.props.campaign.firstName : '',
+   lastName: this.props.campaign ? this.props.campaign.lastName : '',
+    phoneNumber: this.props.campaign ? this.props.campaign.phoneNumber : '',
+    companyName: this.props.campaign ? this.props.campaign.companyName : '',
+    city: this.props.campaign ? this.props.campaign.city : '',
+    postCode: this.props.campaign ? this.props.campaign.postCode : '',
+     streetAdress: this.props.campaign ? this.props.campaign.streetAdress : '',
+    state: this.props.campaign ? this.props.campaign.state : '',
+    country: this.props.campaign ? this.props.campaign.country : '',
+    budget: this.props.campaign ? this.props.campaign.budget : '',
+    campaignRef: firebase.database().ref("campaigns"),
+    isLoading: false
    }
  
   onChange = date => this.setState({ date })
@@ -24,6 +30,38 @@ export default class Step3 extends Component {
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
   };
+
+  handleCampaign = () => {
+    this.setState({isLoading: true});
+    this.state.campaignRef
+        .child(this.props.currentUser.uid)
+        .child(this.props.match.params.id)
+        .update({
+          ...this.props.campaign,
+          timeStamp: firebase.database.ServerValue.TIMESTAMP,
+          date: this.state.date,
+          firstName: this.state.firstName,
+         lastName: this.state.lastName,
+          phoneNumber: this.state.phoneNumber,
+          companyName: this.state.companyName,
+          city: this.state.city,
+          postCode: this.state.postCode,
+           streetAdress: this.state.streetAdress,
+          state: this.state.state,
+          country: this.state.country,
+          budget: this.state.budget,
+        })
+        .then(() => {
+          this.setState({isLoading: false});
+          this.props.history.push('/dashboard');
+          
+        })
+        .catch(err => {
+          this.setState({isLoading: false});
+          console.error(err);
+        })
+  }
+  
 
   render() {
     const options = [
@@ -35,13 +73,13 @@ export default class Step3 extends Component {
     companyName,
     city,
      postCode,
-    StreetAdress,
+    streetAdress,
      state,
     country,
     budget
   } 
    = this.state;
-    return (
+    return this.state.isLoading ? <Spinner /> : (
       <div className="Step">
         <div className="Step__title">Your Details</div>
 
@@ -130,8 +168,8 @@ export default class Step3 extends Component {
                 <Input 
                  fluid
                  type="text"
-                 name="StreetAdress"
-                 value={StreetAdress}
+                 name="streetAdress"
+                 value={streetAdress}
                  onChange={this.handleChange}
                  />
               </div>
@@ -224,18 +262,26 @@ export default class Step3 extends Component {
             minDate={new Date()}
           onChange={this.onChange}
           value={this.state.date}
-
-
         />
           </div>
         </div>
 
         <div className="Step__line" />
         <div className="Step__button">
-          <button onClick={this.props.previousStep}>Previous Step</button>
-          <button>Submit</button>
+          <button onClick={this.props.previousStep} >Previous Step</button>
+          <button onClick={this.handleCampaign}>Submit</button>
         </div>
       </div>
     );
   }
 }
+
+
+const mapStateToProps = state => {
+  return {
+    currentUser: state.currentUser.currentUser
+  };
+}
+
+
+export default withRouter(connect(mapStateToProps)(Step5));

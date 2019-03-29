@@ -31,7 +31,7 @@
 .HeaderPricing__pricing {
    font-size: 1.3rem;
    text-transform: uppercase;
-    color: #1abc9c;
+   color: var(--color-primary);
     font-weight: 500;
 }
 
@@ -43,7 +43,7 @@
 
 .HeaderPricing__title2 {
    font-size: 1.3rem;
-   color: #1abc9c;
+   color: var(--color-primary);
     font-weight: 500;
 }
 
@@ -58,7 +58,7 @@
 .HeaderPricing__pricing {
    font-size: 1.1rem;
    text-transform: uppercase;
-    color: #1abc9c;
+   color: var(--color-primary);
     font-weight: 500;
 }
 
@@ -70,7 +70,7 @@
 
 .HeaderPricing__title2 {
    font-size: 1.2rem;
-   color: #1abc9c;
+   color: var(--color-primary);
     font-weight: 500;
 }
 

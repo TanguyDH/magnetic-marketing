@@ -7,8 +7,7 @@ class Mission extends Component {
     return (
       <div className="Mission">
         <h3>
-          Magnetic's mission is to give the opportunity the world to adopt
-          innovative brand.
+        Magnetic's mission is to connect brands to Nano-influencers through stories.
         </h3>
       </div>
     );

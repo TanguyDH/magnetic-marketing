@@ -14,15 +14,18 @@ class HeaderB extends Component {
         <div>
 
             <p className="headerB__description">
-               <h2>Storytelling Marketing.</h2>
-               <h4>Understand and touch your targets.</h4>
-            </p>
-            <Link 
+               <h2>Magnetic Bussiness.</h2>
+               <h4>Storytelling through  Nano-influencers .</h4>
+               <Link 
               to='./signup'
               className="headerB__button"
             >
               Get Started
             </Link>
+            </p>
+           
+          
+         
         </div>
       </div>
     );

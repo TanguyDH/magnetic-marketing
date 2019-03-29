@@ -252,7 +252,10 @@
 }
 
 .WhyUs__video {
-    flex: 0 0 25%;
+    /* flex: 0 0 25%; */
+    margin: 2rem;
+    width: 80vw;
+    height: auto;
 
 }
 
@@ -278,6 +281,7 @@
     font-size: 2rem;
 }
 .WhyUs__introText {
+
     font-size: 1.3rem;
 
 }
@@ -295,7 +299,11 @@
     font-size: 2.5rem;
 }
 .WhyUs__video {
-    flex: 0 0 25%;
+    /* display: none; */
+    width: 50vw;
+    margin: 2rem;
+    height: auto;
+    overflow: hidden;
 
 }
 

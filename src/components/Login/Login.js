@@ -47,7 +47,7 @@ import { setUser } from '../../store/actions/UserState';
   errors.map((error, i) => <p key={i}>{error.message}</p>);
 
     render() {
-        return (
+        return    this.state.loading ? <Spinner />:  (
           <div className="Login">
             <div className="Login__header">
               <img src={logo} className="Login__logo" alt='logo' />
@@ -71,7 +71,7 @@ import { setUser } from '../../store/actions/UserState';
             )}
           </div>
            <button onClick={this.handleSubmit} className="Login__button">
-            {this.state.loading ? <Spinner />: ''}
+         
             Continue
               </button>
               </form>

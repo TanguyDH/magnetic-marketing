@@ -1,0 +1,16 @@
+
+.DashboardCreate {
+    
+    margin: 0 auto;
+}
+
+ .DashboardCreate__goDashboard {
+    display: block;
+    color: #55E6C1;
+    transition: all .2s;
+    font-size: 1rem;
+    margin: 0 0 3rem 1rem;
+}
+.DashboardCreate__goDashboard:hover {
+    color: rgb(89, 199, 171);
+} 

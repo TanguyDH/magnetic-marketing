@@ -2,21 +2,27 @@ import React, { Component } from 'react'
 import './Step1.css';
 import "filepond/dist/filepond.min.css";
 import { Input, TextArea, Form, Select} from 'semantic-ui-react';
+import {withRouter} from 'react-router-dom';
 import primary from './primary';
 import secondary from './secondary';
 import UploadFile from '../../UI/UploadFile/UploadFile';
+import {connect} from 'react-redux';
+import firebase from '../../../firebase';
+import Spinner from '../../UI/Spinner/Spinner';
 
  class Step1 extends Component {
     state = {
-    fileHero: '',
-    fileLogo: '',
-    brandName: '',
-    campaignName: '',
-    productDescription:'',
-    productUrl: '',
-    whereGetProduct: '',
-    productCategoryPrimary: '',
-    productCategorySecondary: ''
+    fileHero: this.props.campaign ? this.props.campaign.fileHero : "",
+    fileLogo: this.props.campaign ? this.props.campaign.fileLogo : "",
+    brandName: this.props.campaign ? this.props.campaign.brandName : "",
+    campaignName: this.props.campaign ? this.props.campaign.campaignName : "",
+    productDescription:this.props.campaign ? this.props.campaign.productDescription : "",
+    productUrl: this.props.campaign ? this.props.campaign.productUrl : "",
+    whereGetProduct: this.props.campaign ? this.props.campaign.whereGetProduct : "",
+    productCategoryPrimary: this.props.campaign ? this.props.campaign.productCategoryPrimary : "",
+    productCategorySecondary: this.props.campaign ? this.props.campaign.productCategorySecondary : "",
+    campaignRef: firebase.database().ref("campaigns"),
+    isLoading: false
 };
 handleProductCategoryPrimary = (e, data) => {
   this.setState({ productCategoryPrimary: data.value });
@@ -37,7 +43,37 @@ handleProductCategorySecondary = (e, data) => {
     this.setState({ [event.target.name]: event.target.value });
   };
 
+  handleCampaign = (next) => {
+    this.setState({isLoading: true});
+    this.state.campaignRef
+        .child(this.props.currentUser.uid)
+        .child(this.props.match.params.id)
+        .update({
+          ...this.props.campaign,
+          timeStamp: firebase.database.ServerValue.TIMESTAMP,
+          id: this.props.match.params.id,
+          fileHero: this.state.fileHero,
+          fileLogo: this.state.fileLogo,
+          brandName: this.state.brandName,
+          campaignName: this.state.campaignName,
+          productDescription:this.state.productDescription,
+          productUrl: this.state.productUrl,
+          whereGetProduct: this.state.whereGetProduct,
+          productCategoryPrimary: this.state.productCategoryPrimary,
+          productCategorySecondary: this.state.productCategorySecondary
+        })
+        .then(() => {
+          this.setState({isLoading: false});
+           next();
+        })
+        .catch(err => {
+          this.setState({isLoading: false});
+          console.error(err);
+        })
+  }
+
   render() {
+    console.log('helooooo', this.props.campaign);
     const { 
     brandName,
     campaignName,
@@ -48,20 +84,20 @@ handleProductCategorySecondary = (e, data) => {
     productCategorySecondary} 
      = this.state;
   
-    return (
+    return this.state.isLoading ? <Spinner /> : (
       <div className="Step">
         <div className="Step__flex">
           <div className="Step__part1">
             <div className="Step__inputs">
               <div className="Step__inputBox">
                 <div className="Step__label">Upload Hero Image</div>
-                  <UploadFile handleFile={this.handleFileHero} />
+                  <UploadFile value={this.state.fileHero} handleFile={this.handleFileHero} />
               </div>
             </div>
             <div className="Step__inputs">
               <div className="Step__inputBox">
                 <div className="Step__label">Upload Logo</div>
-                <UploadFile handleFile={this.handleFileLogo} />
+                <UploadFile value={this.state.fileLogo} handleFile={this.handleFileLogo} />
               </div>
             </div>
           </div>
@@ -152,10 +188,20 @@ handleProductCategorySecondary = (e, data) => {
 
         <div className="Step__button">
           <div />
-          <button onClick={this.props.nextStep}>Next Step</button>
+          <button  onClick={() =>{this.handleCampaign(this.props.nextStep)}}>Next Step</button>
         </div>
       </div>
     );
   }
 }
-export default Step1;
+
+
+
+const mapStateToProps = state => {
+  return {
+    currentUser: state.currentUser.currentUser
+  };
+}
+
+
+export default  withRouter(connect(mapStateToProps)(Step1));

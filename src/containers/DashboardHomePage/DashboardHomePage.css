@@ -1,16 +1,15 @@
 
 
  .DashboardHomePage {
-    width: 80rem;
+    width: 75rem;
     margin: 8rem auto;
-    position: relative;
+    padding: .5rem;
    
 } 
 
- @media only screen and (max-width:1400px){
+ @media only screen and (max-width:1000px){
 .DashboardHomePage {
     width: 98%;
-    margin: 6rem auto 0rem auto;
-    position: relative;
+    margin: 8rem auto 2rem auto;
 } 
  }

@@ -1,6 +1,7 @@
 
 .Login{
   margin: 5rem auto;
+  width: 30rem;
 }
 
 .Login__header {
@@ -18,7 +19,7 @@
 
 .Login__box {
    margin: 0 auto;
-    width: 30rem;
+  width: 100%;
     padding: 2rem;
     border: solid 1px #bdc3c7;
       border-radius: 5px;
@@ -88,3 +89,9 @@
     font-size: 1.2rem;
 }
 
+
+@media only screen and (max-width: 600px){
+    .Login{
+        width: 98vw;
+      }
+}

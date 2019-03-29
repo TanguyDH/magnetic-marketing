@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import './HeaderDashboard.css';
-import {Icon} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import Spinner from '../../UI/Spinner/Spinner';
+import uuidv4 from 'uuid/v4';
 
 
 class HeaderDashboard extends Component {
 
-  state ={
+  state = {
     user: undefined
   }
 
@@ -19,14 +19,14 @@ class HeaderDashboard extends Component {
     return this.props.isLoading ? <Spinner /> : (
       <div className="HeaderDashboard">
         <div className="HeaderDashboard__Magnetic">Magnetic Dashboard</div>
-        <div className="HeaderDashboard__search">
+        {/* <div className="HeaderDashboard__search">
           <input
             className="HeaderDashboard__input"
             placeholder="Search Campaign"
-          />{" "}
-          <Icon name="search" />{" "}
+          />
+          <Icon name="search" />
         </div>
-        <div className="HeaderDashboard__line" />
+        <div className="HeaderDashboard__line" /> */}
         <div className="HeaderDashboard__add">
           <div className="HeaderDashboard__who">
             <div className="HeaderDashboard__letter">{this.state.user && this.state.user.photoURL[0]}</div>
@@ -35,7 +35,7 @@ class HeaderDashboard extends Component {
               <div className="HeaderDashboard__name">{this.state.user && this.state.user.displayName}</div>
             </div>
           </div>
-          <Link to="/dashboardCreate" className="HeaderDashboard__button">
+          <Link to={`/dashboardCreate/${uuidv4()}`} className="HeaderDashboard__button">
             Create Campaign
           </Link>
         </div>

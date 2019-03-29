@@ -1,5 +1,4 @@
 
-
 import React, { Component } from 'react'
 import './WhyUs.css';
 import {Icon} from 'semantic-ui-react';
@@ -57,12 +56,14 @@ class WhyUs extends Component {
               <p>
               We will asked them a series of questions about them related to your brand. Then
               they will tell a personal story in relation to your brand.
+              <strong>{' '}Stories are scientifically proven to get a person’s attention.</strong>
               This will impact word of mouth of your
               company and optimize several factors necessary for the
               development of your brand.
               </p>
             </p>
           </p>
+          
           <ReactPlayer
             className="WhyUs__video"
             url={video}
@@ -71,7 +72,7 @@ class WhyUs extends Component {
             loop
           />
     
-          {/* <img src={img} className="WhyUs__img" alt='img' /> */}
+        
         </div>
 
         <div className="WhyUs__section">
@@ -115,7 +116,7 @@ class WhyUs extends Component {
               A​ new way of vision
             </h5>
             <p className="WhyUs__text">
-              By authenticity and credibility of the recommendation ,
+              By <strong>authenticity</strong> and <strong>credibility</strong> of the recommendation ,
               surrounded people of magnets will have a new vision of your
               product and will be more interested in using it because from
               now he knows personally someone who are using it.
@@ -128,3 +129,7 @@ class WhyUs extends Component {
 }
 
 export default WhyUs;
+
+
+
+// We can touch the right people, with the right emotion.

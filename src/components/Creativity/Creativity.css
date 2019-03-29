@@ -41,14 +41,14 @@
 .Creativity__button {
     cursor: pointer;
     border: none;
-    color: #1abc9c;
+    color: var(--color-primary--dark);
     transition: all .2s;
      background-color: transparent;
 }
 
 .Creativity__button:hover {
-   background-color: #1abc9c;
-    color: #ffffff;
+   background-color: var(--color-primary--dark);
+    color: white;
     box-shadow: 0.643px 0.766px 0px 0px rgba(12,34,66,0.09),  15px 15px 38px 5px rgba(12,34,66,0.13);
 }
 
@@ -77,17 +77,10 @@
 .Creativity__p{
   font-size: 1.5rem;
 }
-/* .Creativity__text {
-    flex: 0 0 100%;
-}
-
-.Creativity__videoBox {
-    flex: 0 0 100%
-}  */
 
 
-/* .Creativity__video{
-   margin-top: 4rem;
-   flex: 0 0 65%;
-} */
+
+.Creativity__video{
+   display: none;
+} 
 } 

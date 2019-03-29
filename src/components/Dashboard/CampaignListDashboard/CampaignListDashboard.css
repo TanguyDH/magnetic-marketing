@@ -1,13 +1,34 @@
+.CampaignListDashboard {
+   
+   margin: 2rem auto ;
+
+ 
+   
+}
+
+.CampaignListDashboard__list {
+  
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+}
+
+
 .CampaignListDashboard__first {
     margin-top: 8rem;
     text-align: center;
     color: var(--color-grey-dark-1);
     font-size: 1.4rem;
+ 
     /* line-height: 5px; */
 }
 
 .CampaignListDashboard__first p {
-    line-height: 5px;
+    /* line-height: 5px; */
+    margin: 8px 0;
 }
 
 .CampaignListDashboard__first-button {
@@ -17,3 +38,6 @@
 .CampaignListDashboard__first-button:hover {
     color: rgb(68, 187, 157);
 }
+
+
+

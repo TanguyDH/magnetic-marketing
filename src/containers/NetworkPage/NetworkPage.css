@@ -2,7 +2,7 @@
 .NetworkPage {
     min-height: 100vh;
     width: 90rem;
-    margin: 8rem auto;
+    margin: 0rem auto;
 }
 
 
@@ -10,6 +10,5 @@
  .NetworkPage {
     min-height: 100vh;
     width: 100%;
-    margin: 6rem auto;
 }
  }

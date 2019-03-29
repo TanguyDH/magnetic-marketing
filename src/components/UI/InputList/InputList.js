@@ -11,7 +11,7 @@ class InputList extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      value: []
+      value: this.props.value ? this.props.value : []
     }
   }
  
@@ -49,7 +49,7 @@ class InputList extends React.Component {
 
   onChangeInputList = value => {
       this.setState({value});
-      this.props.handleBenefits(value);
+      this.props.handleInputList(value);
   }
  
   render () {

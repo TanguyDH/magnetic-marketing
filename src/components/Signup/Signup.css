@@ -4,6 +4,7 @@
   width: 40rem;
 }
 
+
 .Signup__header {
     text-align: center;
     margin-bottom: 2rem;
@@ -27,10 +28,6 @@
     margin-bottom: 2rem;
 }
 
-.Signup__inputs {
-      display: flex;  
-      justify-content: space-between;
-}
 
 .Signup__label {
     font-size: 1.1rem;
@@ -70,11 +67,11 @@ font-size: 1.2rem
 .Signup__logIn:hover {
     color: rgb(55, 218, 177);
 }
-.Signup__inputBox {
+ .Signup__inputBox {
     display: flex;
     flex-direction: column;
     margin: .6rem 0;
-}
+} 
 .Signup__checkboxBox {
     display: flex;
     margin-bottom: 5px;
@@ -119,3 +116,16 @@ font-size: 1.2rem
 
 
   
+  @media only screen and (max-width: 600px){
+    .Signup{
+        width: 98vw;
+      }
+
+       .Signup__inputs {
+         flex-direction: column;
+      }
+      .Signup__inputs .Signup__inputBox {
+        width: 100%;
+      
+   } 
+}  

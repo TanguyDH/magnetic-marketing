@@ -59,7 +59,7 @@ font-size: 2rem;
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
     .SideBar__icon {
     display: block;
     cursor: pointer;

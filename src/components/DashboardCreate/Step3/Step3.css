@@ -9,7 +9,8 @@
 
 .Step__genderBox {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem 0;
 }
 
@@ -17,11 +18,13 @@
     font-size: 1.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     border: solid 1px #55E6C1;
     color: #55E6C1;
     padding: 1rem 6rem;
     cursor: pointer;
     border-radius: 5px;
+    width: 49.5%;
 
 }
 

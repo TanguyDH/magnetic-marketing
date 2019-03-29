@@ -10,7 +10,9 @@ import BrandSaying from "../../components/BrandSaying/BrandSaying";
 import Creativity from "../../components/Creativity/Creativity";
 import MoreSectionNetwork from '../../components/MoreSectionNetwork/MoreSectionNetwork';
 import AverageEngagement from '../../components/AverageEngagement/AverageEngagement';
-
+import Navigation from '../../components/Navigation/Navigation';
+import Footer from '../../components/Footer/Footer';
+import LaunchCampaign from "../../components/UI/LaunchCampaign/LaunchCampaign";
 
 class HomeB extends Component {
   componentDidMount() {
@@ -18,8 +20,12 @@ class HomeB extends Component {
    }
   render() {
     return (
-      <div>
+      <div className='HomeB'>
+        <Navigation />
+        
         <HeaderB />
+
+        <Mission />
       
         <WhyUs />
        
@@ -32,11 +38,13 @@ class HomeB extends Component {
 
         <HowItWorks />
 
+        <div className='HomeB__launchCampaign'>
+            <LaunchCampaign />
+          </div>
 
         <BrandSaying />
-
-
-        
+       
+        <Footer />
       </div>
     );
   }

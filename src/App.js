@@ -46,45 +46,24 @@ import Spinner from './components/UI/Spinner/Spinner';
   render() {
     return this.props.isLoading ? <Spinner /> : (
       <div>
-        {this.props.location.pathname === "/login" ||
-        this.props.location.pathname === "/signup" ||
-        this.props.location.pathname === "/dashboardCreate" ||
-        this.props.location.pathname === "/dashboard" ? (
-          <p />
-        ) : (
-          <Navigation />
-        )}
-        {this.props.location.pathname === "/dashboard" && (
-          <DashboardNavigation />
-        )}
-        {this.props.location.pathname === "/dashboardCreate" && (
-          <DashboardNavigation />
-        )}
-
+     
         <Switch>
           <Route path="/" component={HomeB} exact />
           <Route path="/magnet" component={Home} />
           <Route path="/cgu" component={Cgu} />
           <Route path="/pricing" component={PricingPage} />
-        
           <Route path="/solution" component={NetworkPage} />
           <Route path="/faq" component={FaqPage} />
           <Route path="/signup" component={SignupPage} />
           <Route path="/login" component={LoginPage} />
           <Route path="/dashboard" component={DashboardHomePage} />
-          <Route path="/dashboardCreate" component={DashboardCreatePage} />
+          <Route path="/dashboardCreate/:id" component={DashboardCreatePage} />
           <Route component={NotFound} />
         </Switch>
         <Modal />
 
-        {this.props.location.pathname === "/login" ||
-        this.props.location.pathname === "/signup" ||
-        this.props.location.pathname === "/dashboardCreate" ||
-        this.props.location.pathname === "/dashboard" ? (
-          <p />
-        ) : (
-          <Footer />
-        )}
+        
+         
       </div>
     );
   }
@@ -92,7 +71,8 @@ import Spinner from './components/UI/Spinner/Spinner';
 
 const mapStateToProps = state => {
   return {
-    isLoading: state.currentUser.isLoading
+    isLoading: state.currentUser.isLoading,
+    currentUser: state.currentUser.currentUser
   }
 }
 
@@ -100,3 +80,7 @@ const mapStateToProps = state => {
 
 export default withRouter(connect(mapStateToProps,{clearUser, setUser})(App));
 
+
+
+// this.props.location.pathname === `/dashboardCreate`||
+// this.props.location.pathname === "/dashboard" 

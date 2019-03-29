@@ -6,9 +6,11 @@
     "chart.js": "^2.7.3",
     "filepond": "^4.2.0",
     "firebase": "^5.8.0",
+    "moment": "^2.24.0",
     "rc-slider": "^8.6.5",
     "react": "^16.7.0",
     "react-chartkick": "^0.3.0",
+    "react-circular-progressbar": "^1.0.0",
     "react-date-picker": "^7.3.0",
     "react-dom": "^16.7.0",
     "react-filepond": "^7.0.1",
@@ -36,7 +38,8 @@
     "react-typist-loop": "0.0.5",
     "redux": "^4.0.1",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.84.0"
+    "semantic-ui-react": "^0.84.0",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

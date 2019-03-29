@@ -16,9 +16,9 @@ class Footer extends Component {
           </a>
         </div>
 
-        <Link to="/cgu"  className="footer__cgu">
+        {/* <Link to="/cgu"  className="footer__cgu">
           CGU
-        </Link>
+        </Link> */}
       </div>
     );
   }

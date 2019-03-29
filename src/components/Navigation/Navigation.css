@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
 
-    height: 5.5rem;
+    height: 5rem;
     padding: 2rem;
     width: 100%;
     font-size: 1rem;
@@ -30,14 +30,12 @@
 
 
 .navigation__logo{
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
      font-size: 1.5rem;
     /* font-family: 'Monoton', cursive; */
     cursor: pointer;
-      cursor: pointer;  
-   
-     
+      cursor: pointer;    
 }
 
 .navigation__logo-link {
@@ -128,12 +126,14 @@
 
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
 
     .navigation {
         height: 0rem;
     }
-
+    .navigation__logo{
+        padding: 0rem;   
+    }
 
  .navigation nav {
    display: none;

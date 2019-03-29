@@ -7,36 +7,63 @@ import {Input} from 'semantic-ui-react';
 import Select from "react-select";
 import makeAnimated from "react-select/lib/animated";
 import categoryOptions from './categoryOptions';
+import firebase from '../../../firebase';
+import Spinner from '../../UI/Spinner/Spinner';
+import {connect} from 'react-redux';
+import {withRouter} from 'react-router-dom'
 
 const Range = Slider.Range;
 
 
-export default class Step3 extends Component {
+class Step3 extends Component {
   state = {
-    value: [13,80],
-    male: true,
-    female: true,
-    selectInterest: null
+    sliderValue: this.props.campaign ? this.props.campaign.sliderValue :  [13,80],
+    male: this.props.campaign ? this.props.campaign.male : true,
+    female: this.props.campaign ? this.props.campaign.female :true,
+    // selectInterest: this.props.campaign ? this.props.campaign.selectInterest : [],
+    campaignRef: firebase.database().ref("campaigns"),
+    isLoading: false
   };
   onSliderChange = (value) => {
     console.log(value);
     this.setState({
-      value,
+      sliderValue: value,
     });
   }
-//  onChange = (val) => {
-//   console.log("Selected: " + val);
-// }
+
 
 handleSelectInterest = (value)  =>{
   this.setState({ selectInterest: value });
+}
+
+handleCampaign = (next) => {
+  this.setState({isLoading: true});
+  this.state.campaignRef
+      .child(this.props.currentUser.uid)
+      .child(this.props.match.params.id)
+      .update({
+        ...this.props.campaign,
+        timeStamp: firebase.database.ServerValue.TIMESTAMP,
+        sliderValue: this.state.sliderValue,
+        male:this.state.male,
+        female: this.state.female,
+        // selectInterest: this.state.selectInterest
+      })
+      .then(() => {
+        this.setState({isLoading: false});
+         next();
+      })
+      .catch(err => {
+        this.setState({isLoading: false});
+        console.error(err);
+      })
 }
 
 
     render() {
     const {selectInterest} = this.state;
     
-        return (
+        return this.state.isLoading ? <Spinner /> : (
           <div className="Step">
             <div className="Step__flex">
               <div className="Step__part1">
@@ -44,11 +71,11 @@ handleSelectInterest = (value)  =>{
                   <div className="Step__inputBox">
                     <div className="Step__label">Age (13 - 80)</div>
                     <p className="Step3__age">
-                      {this.state.value[0]} - {this.state.value[1]}{" "}
+                    {this.state.sliderValue[0]} - {this.state.sliderValue[1]}
                     </p>
                     <Range
                       allowCross={false}
-                      value={this.state.value}
+                      value={this.state.sliderValue}
                       onChange={this.onSliderChange}
                       trackStyle={[{ backgroundColor: "#55E6C1" }]}
                       handleStyle={[
@@ -124,9 +151,19 @@ handleSelectInterest = (value)  =>{
               <button onClick={this.props.previousStep}>
                 Previous Step
               </button>
-              <button onClick={this.props.nextStep}>Next Step</button>
+              <button onClick={() =>{this.handleCampaign(this.props.nextStep)}}>Next Step</button>
             </div>
           </div>
         );
     }
 }
+
+
+const mapStateToProps = state => {
+  return {
+    currentUser: state.currentUser.currentUser
+  };
+}
+
+
+export default withRouter(connect(mapStateToProps)(Step3));

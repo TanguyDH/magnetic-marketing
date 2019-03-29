@@ -1,24 +1,15 @@
 
 .DashboardCreatePage {
-    width: 80rem;
+    width: 75rem;
     min-height: 100vh;
     margin: 8rem auto;
+   
 
 }
 
-.DashboardCreatePage__draft {
-    position: absolute;
-    top: 6rem;
-    left: 2rem;
-    color: #55E6C1;
-    transition: all .2s;
-    font-size: 1.5rem;
-}
-.DashboardCreatePage__draft:hover {
-    color: rgb(89, 199, 171);
-}
 
- @media only screen and (max-width:1400px){
+
+ @media only screen and (max-width:1000px){
 .DashboardCreatePage {
     width: 98%;
     margin: 8rem auto 0rem auto;

@@ -24,28 +24,25 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);  
+   
 } 
 
 
 .headerB__description {
+    padding: 2rem;
       margin-bottom: 4rem; 
-   
-
-
+      width: 100vw;
 }
 
 
 .headerB__description h2{
-    display: flex;
     color: white;
-    justify-content: center;
-    align-items: center;
      font-size: 4rem;
       font-weight: 300;
-    /* white-space: nowrap; */
-      animation-name: moveInLeft;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
+    white-space: nowrap;
+    /* animation-name: moveInLeft; */
+    /* animation-duration: 1.5s; */
+    /* animation-timing-function: ease-out; */
     width: 100%;  
     letter-spacing: .5rem;
     white-space: nowrap;
@@ -54,27 +51,28 @@
 .headerB__description h4{
        color: white;
     font-size: 2.2rem;
-    font-weight: 200;
-     animation-name: moveInRight;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
+    font-weight: 300;
+     /* animation-name: moveInRight; */
+    /* animation-duration: 1.5s; */
+    /* animation-timing-function: ease-out; */
     letter-spacing: .8rem;
-    white-space: nowrap
+    white-space: nowrap;
+    margin-bottom: 3rem;
 }
 
 
 .headerB__button {
     display: inline-block;
-    animation-name: moveInBottom;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
+    /* animation-name: moveInBottom; */
+    /* animation-duration: 1.5s; */
+    /* animation-timing-function: ease-out; */
     font-size: 1.8rem;
     font-weight: bold;
       background-color: #f7f7f7;
       color: #2c3e50;
     border: solid 2px white;
     border-radius: 30px;
-     padding: 1.4rem 5rem;
+     padding: 1.2rem 5rem;
     cursor: pointer;
     align-self: flex-end;
     transition: all .2s;
@@ -98,25 +96,28 @@
    letter-spacing: .4rem
 }
 .headerB__description h4{
-    letter-spacing: .1rem;
+    letter-spacing: .4rem;
 }
 }
 
 @media only screen and (max-width: 1100px){ 
 .headerB__description h2{
     font-size: 2.5rem;
-    /* white-space: normal; */
+    white-space: nowrap;
 }
 .headerB__description h4{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
   }
 
 
   
-  @media only screen and (max-width: 550px){
+  @media only screen and (max-width: 600px){
+
+   
+    
       .headerB  {
-    text-align: initial;
+        
     clip-path: polygon(0 0,100% 0, 100% 90vh, 0 100%);  
 }
 
@@ -126,21 +127,29 @@
        padding: .8rem 3rem; 
 }
 .headerB__description h2{
-    font-size: 2rem;
+    font-size: 1.7rem;
     white-space: normal;
+
 }
 .headerB__description h4{
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.7rem;
+    white-space: normal;
+    margin-bottom: 2rem;
 }
 .headerB__description {
-      margin-bottom: 2rem;
+  
+    margin-bottom: 2rem;
+}
 }
 
+@media only screen and (max-width: 400px){
+    .headerB  {
+        text-align: initial;
+    clip-path: polygon(0 0,100% 0, 100% 90vh, 0 100%);  
+}
 
-  }
+}
 
-  
 
 
   @media only screen and (max-width: 300px){ 
@@ -149,7 +158,7 @@
     font-size: 1.2rem;
 }
   }
-  @media only screen and (max-height: 500px){ 
+  /* @media only screen and (max-height: 500px){ 
  
 .headerB  {
     
@@ -164,7 +173,7 @@
 }
 
 
-  }
+  } */
 
 
 

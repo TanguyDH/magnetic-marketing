@@ -11,7 +11,6 @@
 
 
 .PlanPrice__plan {
-   /* margin-right: 1rem; */
    padding: 2rem;
    width: 30%;
    box-shadow: 0.643px 0.766px 0px 0px rgba(12,34,66,0.09),10.285px 12.257px 38px 0px rgba(12,34,66,0.13);
@@ -35,6 +34,9 @@
 
 .PlanPrice__list {
     list-style: none;
+    padding: 0;
+   
+ 
 }
 
 .PlanPrice__item {

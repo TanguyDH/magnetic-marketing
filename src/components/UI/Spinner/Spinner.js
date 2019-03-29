@@ -4,6 +4,7 @@ import './Spinner.css';
 class Spinner extends Component {
   render() {
     return (
+     
       <div className='Spinner'>
  <div className="spinner">
   <div className="bounce1"></div>
@@ -12,6 +13,7 @@ class Spinner extends Component {
 </div>
 
       </div>
+     
     )
   }
 }

@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './NetworkPage.css';
 import Network from '../../components/Network/Network';
+import Navigation from '../../components/Navigation/Navigation';
+import Footer from '../../components/Footer/Footer';
 
 export default class NetworkPage extends Component {
     componentDidMount() {
@@ -8,9 +10,13 @@ export default class NetworkPage extends Component {
     }
   render() {
     return (
+      <div>
       <div className='NetworkPage'>
+           <Navigation />
             <Network /> 
             
+      </div>
+      <Footer />
       </div>
     )
   }

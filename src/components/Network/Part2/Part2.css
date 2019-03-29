@@ -32,3 +32,49 @@
  
 }
 
+
+
+
+@media only screen and (max-width: 900px){
+ 
+   .Part2__box {
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ .Part2__text {
+     width: 100%;
+     text-align: center;
+ }
+ .Part2__img {
+     width: 35%;
+     margin-bottom: 5rem;
+ }
+ }
+ 
+ 
+ @media only screen and (max-width: 600px){
+  
+ 
+ 
+ 
+ .Part2 {
+     font-size: 1.2rem;
+     padding: 2rem;
+     margin: 4rem 0;
+ }
+ 
+ .Part2__img {
+     width: 40%;
+     margin-bottom: 2rem;
+ }
+ }
+
+ @media only screen and (max-width: 500px){
+   
+ 
+    .Part2__img {
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+    }

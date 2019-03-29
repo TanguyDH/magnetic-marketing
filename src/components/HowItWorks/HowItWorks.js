@@ -42,8 +42,7 @@ class HowItWorks extends Component {
           </div>
         </div>
 
-          <LaunchCampaign text='Launch a campaign' />
-
+        
      
       </div>;
   }

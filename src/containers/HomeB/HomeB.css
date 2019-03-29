@@ -1,0 +1,16 @@
+
+.HomeB__launchCampaign {
+    text-align: center;
+    margin: 4rem 0 6rem 0;
+}
+@media only screen and (max-width:1000px){
+    .HomeB__launchCampaign {
+        margin: 2rem 0 3rem 0;
+    }
+}
+ @media only screen and (max-width:1400px){
+    .HomeB {
+        width: 98vw;
+        /* margin: 6rem auto 0rem auto; */
+    } 
+}
