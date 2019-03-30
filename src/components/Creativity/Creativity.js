@@ -41,6 +41,7 @@ import video from '../assets/video/videoM.mp4'
             playing
             muted
             loop
+            width='95%'
           />
         </div>
       </div>

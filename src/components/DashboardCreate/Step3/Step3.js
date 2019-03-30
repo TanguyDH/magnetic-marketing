@@ -5,7 +5,7 @@ import {Input} from 'semantic-ui-react';
 // import SelectPlaces from "react-select-places";
 // import "react-select/dist/react-select.css";
 import Select from "react-select";
-import makeAnimated from "react-select/lib/animated";
+
 import categoryOptions from './categoryOptions';
 import firebase from '../../../firebase';
 import Spinner from '../../UI/Spinner/Spinner';
@@ -20,7 +20,7 @@ class Step3 extends Component {
     sliderValue: this.props.campaign ? this.props.campaign.sliderValue :  [13,80],
     male: this.props.campaign ? this.props.campaign.male : true,
     female: this.props.campaign ? this.props.campaign.female :true,
-    // selectInterest: this.props.campaign ? this.props.campaign.selectInterest : [],
+     selectInterest: this.props.campaign ? this.props.campaign.selectInterest : '',
     campaignRef: firebase.database().ref("campaigns"),
     isLoading: false
   };
@@ -47,7 +47,7 @@ handleCampaign = (next) => {
         sliderValue: this.state.sliderValue,
         male:this.state.male,
         female: this.state.female,
-        // selectInterest: this.state.selectInterest
+        selectInterest: this.state.selectInterest
       })
       .then(() => {
         this.setState({isLoading: false});
@@ -61,7 +61,7 @@ handleCampaign = (next) => {
 
 
     render() {
-    const {selectInterest} = this.state;
+   
     
         return this.state.isLoading ? <Spinner /> : (
           <div className="Step">
@@ -128,9 +128,8 @@ handleCampaign = (next) => {
                 <div className="Step__label">With an interest In</div>
                 <Select
                   closeMenuOnSelect={false}
-                  components={makeAnimated()}
                   isMulti
-                  value={selectInterest}
+                  value={this.state.selectInterest}
                   onChange={this.handleSelectInterest}
                   options={categoryOptions}
                   theme={theme => ({

@@ -63,14 +63,16 @@ class WhyUs extends Component {
               </p>
             </p>
           </p>
-          
-          <ReactPlayer
-            className="WhyUs__video"
-            url={video}
-            playing
-            muted
-            loop
-          />
+         
+            <ReactPlayer
+              className="WhyUs__video"
+              url={video}
+              playing
+              muted
+              loop
+              width='95%'
+            />
+        
     
         
         </div>

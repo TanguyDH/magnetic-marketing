@@ -2,12 +2,21 @@
 .CampaignItem {
    align-self: flex-start;
     margin: 1rem ;
-    box-shadow: 0.643px 0.766px 0px 0px rgba(12,34,66,0.09),10.285px 12.257px 38px 0px rgba(12,34,66,0.13);
+    box-shadow: 0.643px 0.766px 0px 0px rgba(12,34,66,0.09),5px 6px 20px 0px rgba(12,34,66,0.13);
     border-radius: 5px;
     width: 15rem;
     min-height: 20rem;
    
 }
+.CampaignItem:hover {
+    align-self: flex-start;
+     margin: 1rem ;
+     box-shadow: 0.643px 0.766px 0px 0px rgba(12,34,66,0.09),20.285px 24.257px 80px 0px rgba(12,34,66,0.13);
+     border-radius: 5px;
+     width: 15rem;
+     min-height: 20rem;
+    
+ }
 
 
  

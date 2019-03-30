@@ -68,12 +68,13 @@
 
 
 .HeaderDashboard__button {
+    /* align-self: flex-start; */
     font-size: 1.5rem;
     background-color: #55E6C1;
     color: white;
     border: none;
-    border-radius: 5px;
-    padding: .8rem 1.6rem;
+    border-radius: 30px;
+    padding: .6rem 1.6rem;
     cursor: pointer;
     transition: all .2s;
 }

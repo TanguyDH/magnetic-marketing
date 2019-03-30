@@ -40,7 +40,7 @@ class DashboardCreate extends React.Component {
     sliderValue:  [13,80],
     male:  true,
     female: true,
-    selectInterest: [],
+    selectInterest: '',
 
     date: new Date(),
     firstName: '',
@@ -97,7 +97,7 @@ class DashboardCreate extends React.Component {
             <StepWizard
               nav={<Navigation />}
               onStepChange={this.onStepChange}
-              initialStep={0}
+              initialStep={3}
             >
               <Step1 campaign={this.state && this.state.campaign} />
               <Step2 campaign={this.state && this.state.campaign} />
